@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Consultório LifeSENSE</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner_2.jpg" class="d-block w-100" alt="Medicina">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="clinic mb-5" style="font-size: 8em;">Life Sense</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top p-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quemsomos">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#convenio">Convênios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex" action="login-acesso.html">
+                    <button class="btn btn-outline-dark" type="submit">Login de Acesso</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <section id="quemsomos" class="row justify-content-center text-center text-light">
+            <h2 class="display-3 pt-4">
+                Cuide bem de sua saúde.
+            </h2>
+            <small><em>#health</em></small>
+            <div class="mt-5 bg-dark rounded col-8 align-self-center flex">
+                <h4 class="p-5">
+                    A saúde é o bem mais valioso que alguém pode ter, nós da <em>LifeSENSE</em> temos a missão de
+                    entregar o melhor atendimento e o mais eficiente tratamento para que você tenha mais qualidade de
+                    vida.
+                </h4>
+            </div>
+            <div>
+                <br id="paciente">
+                <a href="cadastro-paciente.html" class="btn btn-warning btn-lg m-5">Cadastro do paciente</a>
+            </div>
+        </section>
+        <section class="row justify-content-center text-center mb-5">
+            <h2 class="display-3 pt-4 text-light">Cadastros e Convênios</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/card_1.jpg" class="card-img-top" width="500" alt="paciente">
+                        <div class="card-body">
+                            <h5 class="card-title">Cadastro do Paciente</h5>
+                            <p class="card-text">Faça o seu cadastro para ter acesso as suas consultas realizadas e
+                                retornos.
+                            </p>
+                        </div>
+                        <a href="cadastro-paciente.html" class="btn btn-warning">Cadastro</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/card_2.jpg" class="card-img-top" width="500" alt="Capa A Garota do Lago">
+                        <div class="card-body">
+                            <h5 class="card-title">Convênios</h5>
+                            <p class="card-text">Contamos com uma ampla rede de empresas conveniadas para o melhor
+                                atendimento diante as especialidades de necessidade do paciente.
+                            </p>
+                        </div>
+                        <a href="convenios.html" class="btn btn-warning">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/card_3.jpg" class="card-img-top" width="500" alt="Unidades">
+                        <div class="card-body">
+                            <h5 class="card-title">Unidades</h5>
+                            <p class="card-text">A rede de consultórios da LifeSENSE conta com uma amplitude de mais de
+                                5 consultórios em todo o Distrito Federal.
+                            </p>
+                        </div>
+                        <a href="unidades.html" class="btn btn-warning">Localizar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="row justify-content-center bg-light">
+            <h2 class="display-3 mt-4 text-center bg-warning text-white">Contato</h2>
+            <div class="row row-cols-1 row-cols-md-2" id="contato">
+                <div class="col-lg-4 float-start">
+                    <img src="img/enf_1.png" class="img-fluid">
+                </div>
+                <div class="col-lg-8 float-end">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input class="form-control" type="text" placeholder="Digite seu nome" id="nome" name="nome"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Telefone</label>
+                            <input class="form-control" type="tel" placeholder="Telefone com DDD" id="tel" name="tel"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input class="form-control" type="text" placeholder="Digite seu Email" id="email"
+                                name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-warning btn-lg mb-5" style type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Botão Whatsapp -->
+    <a href="#">
+        <img src="img/botao_zap.png" width="80" style="display: block; position: fixed; bottom: 10px; right: 10px;">
+    </a>
+    <!--Botão Whatsapp-->
+    <footer class="container-fluid">
+        <div class="row text-white bg-dark pt-5 pb-5 m-auto">
+            <div class="col-lg-4 col-sm-12">
+                <h4>Consultório LifeSENSE</h4>
+                <small><em>Saúde é o que interessa, o resto?</em></small>
+                <ul class="list-group list-group-flush text-dark">
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Quem Somos</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Convênios</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Cadastre-se</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Contato</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Login</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <p class="pt-5" style="text-align: justify;">O consultório LifeSENSE tem a responsabilidade de ser o
+                    primeiro em qualidade e comprometimento com a sua saúde.
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <p class="pt-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore eligendi aliquid recusandae dolore quas qui
+                    voluptatibus esse libero quasi commodi quisquam laborum quidem sit illo, necessitatibus possimus
+                    quam quaerat animi?
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-warning text-center p-1">
+        <h6 class="small">StarTOPS&copy; 2021 | LifeSENSE</h6>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
